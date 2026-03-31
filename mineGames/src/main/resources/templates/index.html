@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}">MineGame官网</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <th:block th:insert="fragments/header :: header"></th:block>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 th:text="${gameName}">MineGame</h1>
+                <p>探索无限可能的游戏世界</p>
+                <a href="/about" class="btn">了解更多</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>游戏特色</h2>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <h3>开放世界</h3>
+                        <p>探索广阔的游戏世界，发现隐藏的秘密</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>多人互动</h3>
+                        <p>与朋友一起冒险，共同完成任务</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>自定义内容</h3>
+                        <p>打造属于自己的游戏体验</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <th:block th:insert="fragments/footer :: footer"></th:block>
+    <script th:src="@{/js/main.js}"></script>
+</body>
+</html>

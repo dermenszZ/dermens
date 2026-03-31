@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}">关于游戏</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <th:block th:insert="fragments/header :: header"></th:block>
+
+    <main>
+        <section class="about">
+            <div class="container">
+                <h2>关于MineGame</h2>
+                <p>MineGame是一款开放世界的沙盒游戏，玩家可以在其中自由探索、建造和冒险。游戏拥有丰富的内容和无限的可能性，适合各类玩家。</p>
+                
+                <h3>游戏背景</h3>
+                <p>在一个遥远的星球上，玩家需要收集资源、建造庇护所、探索未知区域，同时应对各种挑战。</p>
+                
+                <h3>开发团队</h3>
+                <p>我们是一个充满激情的独立游戏开发团队，致力于创造出色的游戏体验。</p>
+            </div>
+        </section>
+    </main>
+
+    <th:block th:insert="fragments/footer :: footer"></th:block>
+</body>
+</html>
